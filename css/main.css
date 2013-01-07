@@ -1,0 +1,14 @@
+.container
+{
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.contentbox
+{
+	padding:5px;
+	background-color:#A3CCFF;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}

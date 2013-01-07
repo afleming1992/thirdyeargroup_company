@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
      
 <head> 
         <meta charset=utf-8> 
@@ -14,17 +14,30 @@
 </head>
 
     <body>
-        Hello World
-        <div id ="container">
-        
-             <div id ="banner">
-            </div>
-                <div id ="mainContent">
-                    <div id ="nav">
+        <div class='container'>
+		<div class='row'>
+             <div class='banner span12'>
+				 <img src='images/logo.png' />
+			 </div>
+		</div>
+		<div class='row'>
+             <div class='contentbox span12'>
+				<div class='row'>
+					<div class='span8'>
+					
+					</div>
+					<div class='span4'>
+					
+					</div>
+				</div>
+             </div>
+		</div>
+                <div id="mainContent">
+                    <div id="nav">
                      
                         
                   </div>
-                    <div id ="content">
+                    <div id="content">
                         
                   </div>
             </div>
