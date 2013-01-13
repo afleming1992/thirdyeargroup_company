@@ -16,22 +16,35 @@
     <body>
         <div class='container'>
 			<div class='row' style='margin-left:auto;margin-right:auto;'>
-				<div class='banner'>
+				<div class='banner boxgradient'>
 					<img src='images/banner2.png' />
 				</div>
 			</div>
             <div class="navbar" style='margin-bottom:0px;width:1010px'>
                 <div class="navbar-inner">
                       <ul class="nav">
-                         <li class="active"><a href="?file=home">Home</a></li>
-                         <li><a href="?file=aboutus">About Us</a></li>
-                         <li><a href="?file=products">Products</a></li>
-                         <li><a href="?file=projects">Projects</a></li>
-                         <li><a href="?file=contactus">Contact Us</a></li>
+						 <? 
+							$page = "";
+							$default = 0;
+							if(!isset($_GET['file']))
+							{ 
+								$default = 1;
+							}
+							else
+							{
+								$page = $_GET['file'];
+							}
+						 ?>
+                         <li <?php if($page == 'home' || $default == 1){ echo "class='active'";} ?>><a href="?file=home"><i class='icon-home'></i> Home</a></li>
+                         <li <?php if($page == 'aboutus'){ echo "class='active'";} ?>><a href="?file=aboutus"><i class='icon-info-sign'></i> About Us</a></li>
+                         <li <?php if($page == 'theteam'){ echo "class='active'";} ?>><a href="?file=theteam"><i class='icon-user'></i> The Team</a></li>
+                         <li <?php if($page == 'products'){ echo "class='active'";} ?>><a href="?file=products"><i class='icon-gift'></i> Products</a></li>
+                         <li <?php if($page == 'projects'){ echo "class='active'";} ?>><a href="?file=projects"><i class='icon-folder-open'></i> Projects</a></li>
+                         <li <?php if($page == 'contactus'){ echo "class='active'";} ?>><a href="?file=contactus"><i class='icon-envelope'></i> Contact Us</a></li>
                       </ul>
                     </div>
                 </div>
-             <div class='contentbox'>
+             <div class='contentbox boxgradient'>
              		<div class='mainContentBox'>
              				<?php
 									if(!isset($_GET['file']))
@@ -53,7 +66,9 @@
 							?>
 						</div>
 						<div class='sidecontentbox'>
-							Testing
+							<?php
+								include("content/sidebar.php");
+							?>
 						</div>
 				</div>
             </div>
