@@ -39,7 +39,6 @@
                          <li <?php if($page == 'aboutus'){ echo "class='active'";} ?>><a href="?file=aboutus"><i class='icon-info-sign'></i> About Us</a></li>
                          <li <?php if($page == 'theteam'){ echo "class='active'";} ?>><a href="?file=theteam"><i class='icon-user'></i> The Team</a></li>
                          <li <?php if($page == 'products'){ echo "class='active'";} ?>><a href="?file=products"><i class='icon-gift'></i> Products</a></li>
-                         <li <?php if($page == 'projects'){ echo "class='active'";} ?>><a href="?file=projects"><i class='icon-folder-open'></i> Projects</a></li>
                          <li <?php if($page == 'contactus'){ echo "class='active'";} ?>><a href="?file=contactus"><i class='icon-envelope'></i> Contact Us</a></li>
                       </ul>
                     </div>
@@ -66,15 +65,9 @@
 							?>
 						</div>
 						<div class='sidecontentbox'>
-<<<<<<< HEAD
-						<?php
-							include("content/sidebar.php")
-						?>
-=======
 							<?php
 								include("content/sidebar.php");
 							?>
->>>>>>> 8c1519d3c453b0b240e88fa31dd13d59f8a45a54
 						</div>
 				</div>
             </div>
