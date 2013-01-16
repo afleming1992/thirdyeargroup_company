@@ -16,7 +16,7 @@
     <body>
         <div class='container'>
 			<div class='row' style='margin-left:auto;margin-right:auto;'>
-				<div class='banner'>
+				<div class='banner boxgradient'>
 					<img src='images/banner2.png' />
 				</div>
 			</div>
@@ -24,24 +24,27 @@
                 <div class="navbar-inner">
                       <ul class="nav">
 						<?php
+							$page = "";
+							$default = 0;
 							if(!isset($_GET['file']))
-							{
-								$file = "home";
+							{ 
+								$default = 1;
 							}
 							else
 							{
-								$file = htmlspecialchars($_GET['file']);
+								$page = $_GET['file'];
 							}
-						?>
-						<li <?php if($file == "home"){print("class='active'");} ?>><a href="?file=home"><i class="icon-home"></i> Home</a></li>
-						<li <?php if($file == "aboutus"){print("class='active'");} ?>><a href="?file=aboutus"><i class="icon-question-sign"></i> About Us</a></li>
-						<li <?php if($file == "team"){print("class='active'");} ?>><a href="?file=team"><i class="icon-user"></i> Meet the Team</a></li>
-						<li <?php if($file == "projects"){print("class='active'");} ?>><a href="?file=projects"><i class="icon-folder-open"></i> Projects</a></li>
-                        <li <?php if($file == "contactus"){print("class='active'");} ?>><a href="?file=contactus"><i class="icon-envelope"></i></i> Contact Us</a></li>
+						 ?>
+                         <li <?php if($page == 'home' || $default == 1){ echo "class='active'";} ?>><a href="?file=home"><i class='icon-home'></i> Home</a></li>
+                         <li <?php if($page == 'aboutus'){ echo "class='active'";} ?>><a href="?file=aboutus"><i class='icon-info-sign'></i> About Us</a></li>
+                         <li <?php if($page == 'theteam'){ echo "class='active'";} ?>><a href="?file=theteam"><i class='icon-user'></i> The Team</a></li>
+                         <li <?php if($page == 'products'){ echo "class='active'";} ?>><a href="?file=products"><i class='icon-gift'></i> Products</a></li>
+                         <li <?php if($page == 'projects'){ echo "class='active'";} ?>><a href="?file=projects"><i class='icon-folder-open'></i> Projects</a></li>
+                         <li <?php if($page == 'contactus'){ echo "class='active'";} ?>><a href="?file=contactus"><i class='icon-envelope'></i> Contact Us</a></li>
                       </ul>
                     </div>
                 </div>
-             <div class='contentbox'>
+             <div class='contentbox boxgradient'>
              		<div class='mainContentBox'>
              				<?php
 									if(!isset($_GET['file']))
@@ -63,9 +66,15 @@
 							?>
 						</div>
 						<div class='sidecontentbox'>
+<<<<<<< HEAD
 						<?php
 							include("content/sidebar.php")
 						?>
+=======
+							<?php
+								include("content/sidebar.php");
+							?>
+>>>>>>> 8c1519d3c453b0b240e88fa31dd13d59f8a45a54
 						</div>
 				</div>
             </div>
