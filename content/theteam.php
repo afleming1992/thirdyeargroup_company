@@ -9,8 +9,8 @@
     <h4 class="media-heading">Andrew Fleming</h4>
     <h5 class="media-heading">Project Manager</h5>
     <div class="media">
-      <p>Andrew is experienced in web design and development and has worked on a variety of websites. Prior to coming to Tech Dev, Andrew worked as a Communications Assistant at Heriot Watt University Student Union and was responsible for the updating and development of new website content.</p>
-	  <p>Email me at :- ajf9@hw.ac.uk</p>
+      
+	  <p>You can contact me at :- ajf9@hw.ac.uk</p>
     </div>
   </div>
 </div>
@@ -25,7 +25,7 @@
     <h4 class="media-heading">Abbie Cockburn</h4>
     <h5 class="media-heading">Marketing Manager</h5>
     <div class="media">
-      <p>You can contact me using any of the following contact links:-</p>
+      <p>You can contact me at:- arc10@hw.ac.uk</p>
     </div>
   </div>
 </div>
@@ -40,7 +40,7 @@
     <h4 class="media-heading">Chris Cronin</h4>
     <h5 class="media-heading">Business Development Manager</h5>
     <div class="media">
-      <p>You can contact me using any of the following contact links:-</p>
+      <p>You can contact me at:- cjc23@hw.ac.uk</p>
     </div>
   </div>
 </div>
@@ -55,7 +55,7 @@
     <h4 class="media-heading">Yohann Haution</h4>
     <h5 class="media-heading">Software Development Manager</h5>
     <div class="media">
-      <p>You can contact me using any of the following contact links:-</p>
+      <p>You can contact me at:- yh156@hw.ac.uk</p>
     </div>
   </div>
 </div>
@@ -70,7 +70,7 @@
     <h4 class="media-heading">Blair Russell</h4>
     <h5 class="media-heading">Software Developer</h5>
     <div class="media">
-      <p>You can contact me using any of the following contact links:-</p>
+      <p>You can contact me at:- br53@hw.ac.uk</p>
     </div>
   </div>
 </div>
@@ -85,7 +85,7 @@
     <h4 class="media-heading">Stuart Retson</h4>
     <h5 class="media-heading">Software Developer</h5>
     <div class="media">
-      <p>You can contact me using any of the following contact links:-</p>
+      <p>You can contact me at:- sr217@hw.ac.uk-</p>
     </div>
   </div>
 </div>
